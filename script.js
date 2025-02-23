@@ -9,8 +9,8 @@ async function getUsers() {
             // Yaratish
     const card = document.createElement('div'),
     title = document.createElement('h2'),
-    price = document.createElement('p'),
     category = document.createElement('p'),
+    price = document.createElement('p'),
     img = document.createElement('img'),
     rate = document.createElement('p'),
     count = document.createElement('p')
@@ -21,7 +21,7 @@ async function getUsers() {
     title.innerHTML = (`Title: ${user.title}`)
     category.innerHTML = (`Category: ${user.category}`)
     price.innerHTML = (`Price: ${user.price} USD`)
-    rate.innerHTML = (`Rate: ${user.rating.rate}`)
+    rate.innerHTML = (`Rate: ${user.rating.rate} ⭐`)
     count.innerHTML = (`Count: ${user.rating.count}`)
     img.src = `${user.image}`
     console.log(title);
